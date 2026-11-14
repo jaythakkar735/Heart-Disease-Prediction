@@ -1,0 +1,98 @@
+{
+  "dataset": "UCI Cleveland Heart Disease",
+  "sample_size": 303,
+  "train_size": 242,
+  "test_size": 61,
+  "cross_validation_results": {
+    "Dummy Baseline": {
+      "cv_roc_auc_mean": 0.5149201040505388,
+      "cv_f1_mean": 0.43305458768873406,
+      "cv_recall_mean": 0.3956521739130435,
+      "cv_precision_mean": 0.4783625730994152,
+      "cv_accuracy_mean": 0.5248299319727892,
+      "cv_roc_auc_std": 0.07725446702106889,
+      "cv_f1_std": 0.0930508475790241,
+      "cv_recall_std": 0.08351433524048844,
+      "cv_precision_std": 0.10502897927786504,
+      "cv_accuracy_std": 0.07587855245436156
+    },
+    "Logistic Regression": {
+      "cv_roc_auc_mean": 0.9000670022409153,
+      "cv_f1_mean": 0.8147134574150903,
+      "cv_recall_mean": 0.7920948616600791,
+      "cv_precision_mean": 0.8503753501400559,
+      "cv_accuracy_mean": 0.8346088435374149,
+      "cv_roc_auc_std": 0.01587414357261599,
+      "cv_f1_std": 0.014347109826195754,
+      "cv_recall_std": 0.06308528233475581,
+      "cv_precision_std": 0.07597883275581603,
+      "cv_accuracy_std": 0.019351544535348025
+    },
+    "Random Forest": {
+      "cv_roc_auc_mean": 0.8806222762744502,
+      "cv_f1_mean": 0.7713428828989469,
+      "cv_recall_mean": 0.7292490118577076,
+      "cv_precision_mean": 0.825233860342556,
+      "cv_accuracy_mean": 0.801530612244898,
+      "cv_roc_auc_std": 0.026844178228828692,
+      "cv_f1_std": 0.01415738539933523,
+      "cv_recall_std": 0.042990436146019724,
+      "cv_precision_std": 0.0597994677099793,
+      "cv_accuracy_std": 0.017678896591722577
+    },
+    "Gradient Boosting": {
+      "cv_roc_auc_mean": 0.8581720212154995,
+      "cv_f1_mean": 0.746640736839262,
+      "cv_recall_mean": 0.7201581027667985,
+      "cv_precision_mean": 0.7757666894509001,
+      "cv_accuracy_mean": 0.7768707482993197,
+      "cv_roc_auc_std": 0.022739633423937686,
+      "cv_f1_std": 0.04791320802146813,
+      "cv_recall_std": 0.055146485295194184,
+      "cv_precision_std": 0.042002079002109234,
+      "cv_accuracy_std": 0.037682063015557245
+    }
+  },
+  "holdout_test_results": {
+    "Dummy Baseline": {
+      "accuracy": 0.36065573770491804,
+      "balanced_accuracy": 0.3522727272727273,
+      "precision": 0.28,
+      "recall_sensitivity": 0.25,
+      "specificity": 0.45454545454545453,
+      "f1_score": 0.2641509433962264,
+      "roc_auc": 0.3522727272727273,
+      "brier_score": 0.639344262295082
+    },
+    "Logistic Regression": {
+      "accuracy": 0.8852459016393442,
+      "balanced_accuracy": 0.8858225108225108,
+      "precision": 0.8620689655172413,
+      "recall_sensitivity": 0.8928571428571429,
+      "specificity": 0.8787878787878788,
+      "f1_score": 0.8771929824561403,
+      "roc_auc": 0.961038961038961,
+      "brier_score": 0.08353279845624566
+    },
+    "Random Forest": {
+      "accuracy": 0.8852459016393442,
+      "balanced_accuracy": 0.8858225108225108,
+      "precision": 0.8620689655172413,
+      "recall_sensitivity": 0.8928571428571429,
+      "specificity": 0.8787878787878788,
+      "f1_score": 0.8771929824561403,
+      "roc_auc": 0.9437229437229437,
+      "brier_score": 0.11184772174162264
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.8688524590163934,
+      "balanced_accuracy": 0.8679653679653679,
+      "precision": 0.8571428571428571,
+      "recall_sensitivity": 0.8571428571428571,
+      "specificity": 0.8787878787878788,
+      "f1_score": 0.8571428571428571,
+      "roc_auc": 0.933982683982684,
+      "brier_score": 0.10390072045252682
+    }
+  }
+}
